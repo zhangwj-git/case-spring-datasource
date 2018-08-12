@@ -1,11 +1,14 @@
 spring:
   application:
     name: springcase-datasource
-  datasource:
-    url: jdbc:mysql://127.0.0.1:3306/mysql?useUnicode=true&zeroDateTimeBehavior=convertToNull&autoReconnect=true
+  jdbc:
     username: root
     password: 123456
-    driver-class-name: com.mysql.jdbc.Driver
+    driverClass: com.mysql.jdbc.Driver
+    write:
+      url: jdbc:mysql://127.0.0.1:3306/mysql?useUnicode=true&zeroDateTimeBehavior=convertToNull&autoReconnect=true&useSSL=true
+    read:
+      url: jdbc:mysql://127.0.0.1:3306/mysql?useUnicode=true&zeroDateTimeBehavior=convertToNull&autoReconnect=true&useSSL=true
 mybatis:
   type-aliases-package: com.zhang.springcase.dao.*
   mapper-locations: classpath:/mappers/*Mapper.xml
