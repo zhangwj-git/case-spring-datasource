@@ -22,10 +22,12 @@ public class UserApi {
     @GetMapping("list")
     public ResponseEntity<?> getUsers(){
         List<UserEntity> userList = new ArrayList<>();
-        List<UserEntity> users = userService.findAll();
-        userList.addAll(users);
-        List<UserEntity> listUser = userService.listUser();
-        userList.addAll(listUser);
+        userList.addAll(userService.findAll());
+        userList.addAll(userService.listUser());
+        userList.addAll(userService.findAll());
+        userList.addAll(userService.listUser());
+        userList.addAll(userService.findAll());
+        userList.addAll(userService.listUser());
         return new ResponseEntity.Builder().response(ResponseCode.SUCCESS).data(userList).build();
     }
 }
