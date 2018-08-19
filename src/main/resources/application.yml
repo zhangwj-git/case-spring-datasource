@@ -6,7 +6,7 @@ spring:
     password: 123456
     driverClass: com.mysql.jdbc.Driver
     write:
-      url: jdbc:mysql://127.0.0.1:3306/mysql?useUnicode=true&zeroDateTimeBehavior=convertToNull&autoReconnect=true&useSSL=true
+      url: jdbc:mysql://127.0.0.1:3306/ace?useUnicode=true&zeroDateTimeBehavior=convertToNull&autoReconnect=true&useSSL=true
     read:
       url: jdbc:mysql://127.0.0.1:3306/mysql?useUnicode=true&zeroDateTimeBehavior=convertToNull&autoReconnect=true&useSSL=true
 mybatis:

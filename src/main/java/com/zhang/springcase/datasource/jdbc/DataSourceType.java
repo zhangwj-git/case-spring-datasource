@@ -1,4 +1,4 @@
-package com.zhang.springcase.datasource.common;
+package com.zhang.springcase.datasource.jdbc;
 
 /**
  * 数据源类型

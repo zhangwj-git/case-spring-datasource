@@ -1,4 +1,4 @@
-package com.zhang.springcase.datasource.common;
+package com.zhang.springcase.datasource.jdbc;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
@@ -22,7 +22,7 @@ public class DynamicDataSource extends AbstractRoutingDataSource{
     @Override
     protected Object determineCurrentLookupKey() {
         String dataSouceName = contextHolder.get();
-        log.info("DataSource is =>> {}",dataSouceName);
+        log.info("DataSource is ==> {}",dataSouceName);
         return dataSouceName;
     }
 }

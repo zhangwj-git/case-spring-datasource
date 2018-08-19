@@ -1,4 +1,4 @@
-package com.zhang.springcase.datasource.common;
+package com.zhang.springcase.datasource.jdbc;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import com.zhang.springcase.datasource.utils.StringUtil;
